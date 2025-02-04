@@ -14,8 +14,8 @@
   --yellow-100: #fdecaa;
   --yellow-800: #64582b;
   --blue: #35aed7;
-  --blue-100: #aae8fd;
-  --blue-400: #35aed7ñ
+  --blue-100: #d2f3fd;
+  --blue-400: #35aed7;
   --blue-800: #2b4c64;
 }
 
@@ -122,6 +122,46 @@ header {
           display: flex;
         }
       }
+    }
+  }
+}
+.container {
+  max-width: 1440px;
+  margin: auto;
+  gap: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  @media (max-width: 1440px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.hero {
+  display: flex;
+  margin-top: 60px;
+  .hero-blue {
+    flex: 1;
+    background-color: var(--blue-100);
+    border-radius: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hero-yellow {
+    flex: 1;
+    background-color: var(--yellow);
+    border-radius: 30px;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    img {
+      margin-top: -60px;
+      max-width: 420px;
+      margin-bottom: -20px;
     }
   }
 }
